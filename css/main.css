@@ -99,19 +99,54 @@ textarea {
 
 header {
     position: fixed;    /* Fix header to top of viewport */
-    height: 50px;
+    height: 30px;
     width: 100%;
     background-color: #21B6A8;
 }
 
+#logo {
+    display: relative;
+    float: left;
+    width: 150px;
+    background-color: #21B6A8;
+    padding: 4px 0px;
+}
+
 nav {
+    display: relative;
+    float: left;
+    width: calc( 100% - 150px );
     background-color: #177F75;
+    padding: 4px 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 10px;
+}
+
+/* n starts at 0 but nth-child(1) is the first li */
+nav ul li:nth-child(n+2):before {
+    color: #ffffff;
+    content: " | ";
+    padding-right: 10px;
+}
+
+nav a:link {
+    color: #ffffff;
 }
 
 #hero {
-    padding-top: 50px;  /* Push content down to start at the bottom of the header */
+    padding-top: 30px;  /* Push content down to start at the bottom of the header */
     width: 100%;
-    min-height: calc( 100vh - 50px );   /* Set height to viewport minus header height */
+    min-height: calc( 100vh - 30px );   /* Set height to viewport minus header height */
     background-image: url("http://wallpapertoon.com/wp-content/uploads/2014/06/classic-sports-car-hd-desktop-wallpaper.jpg");
     background-size: cover;
     background-position: center;
