@@ -164,8 +164,9 @@ Add uglify config to `Gruntfile.js` (note that config settings sections need to 
 Update `index.html` to point to minified JS file.
 
 Execute Grunt to generate minified JS file
-```
+
 Update Git
+```
 $ git add *
 $ git commit -m "Added Grunt uglify for JS minification"
 $ git push origin Configure-Sass-and-Grunt

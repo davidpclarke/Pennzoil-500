@@ -12,13 +12,11 @@ button,
 input,
 select,
 textarea {
-  color: #222;
-}
+  color: #222; }
 
 html {
   font-size: 1em;
-  line-height: 1.4;
-}
+  line-height: 1.4; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -27,13 +25,11 @@ html {
  */
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 /*
  * A better looking default horizontal rule
@@ -44,8 +40,7 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * Remove the gap between images, videos, audio and canvas and the bottom of
@@ -55,8 +50,7 @@ audio,
 canvas,
 img,
 video {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
@@ -64,15 +58,13 @@ video {
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * Allow only vertical resizing of textareas.
  */
 textarea {
-  resize: vertical;
-}
+  resize: vertical; }
 
 /* ==========================================================================
    Browse Happy prompt
@@ -81,8 +73,7 @@ textarea {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0;
-}
+  padding: 0.2em 0; }
 
 /* ==========================================================================
    Author's custom styles
@@ -92,47 +83,40 @@ header {
   /* Fix header to top of viewport */
   height: 30px;
   width: 100%;
-  background-color: #21B6A8;
-}
+  background-color: #21B6A8; }
 
 #logo {
   display: relative;
   float: left;
   width: 150px;
   background-color: #21B6A8;
-  padding: 4px 0px;
-}
+  padding: 4px 0px; }
 
 nav {
   display: relative;
   float: left;
   width: calc(100% - 150px );
   background-color: #177F75;
-  padding: 4px 0px;
-}
+  padding: 4px 0px; }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  float: right;
-}
+  float: right; }
 
 nav ul li {
   display: inline;
-  padding-right: 10px;
-}
+  padding-right: 10px; }
 
 /* n starts at 0 but nth-child(1) is the first li */
 nav ul li:nth-child(n+2):before {
   color: #ffffff;
   content: " | ";
-  padding-right: 10px;
-}
+  padding-right: 10px; }
 
 nav a:link {
-  color: #ffffff;
-}
+  color: #ffffff; }
 
 #hero {
   padding-top: 30px;
@@ -143,8 +127,7 @@ nav a:link {
   /* To use SASS variables in calculations use hash and braces */
   background-image: url("http://wallpapertoon.com/wp-content/uploads/2014/06/classic-sports-car-hd-desktop-wallpaper.jpg");
   background-size: cover;
-  background-position: center;
-}
+  background-position: center; }
 
 #hero div {
   width: 80%;
@@ -154,24 +137,19 @@ nav a:link {
   text-align: center;
   /* Center headings within the div */
   font-family: 'Faster One', cursive;
-  color: #7F171F;
-}
+  color: #7F171F; }
 
 #largeTitle {
-  margin: 0px;
-}
+  margin: 0px; }
 
 #smallTitle {
-  margin-top: 0px;
-}
+  margin-top: 0px; }
 
 #work {
-  background-color: #7F171F;
-}
+  background-color: #7F171F; }
 
 footer {
-  background-color: #B67721;
-}
+  background-color: #B67721; }
 
 /* ==========================================================================
    Helper classes
@@ -184,23 +162,20 @@ footer {
   border: 0;
   overflow: hidden;
   /* IE 6/7 fallback */
-  *text-indent: -9999px;
-}
+  *text-indent: -9999px; }
 
 .ir:before {
   content: "";
   display: block;
   width: 0;
-  height: 150%;
-}
+  height: 150%; }
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 .hidden {
   display: none !important;
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
@@ -213,8 +188,7 @@ footer {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
-}
+  width: 1px; }
 
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
@@ -227,15 +201,13 @@ footer {
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto;
-}
+  width: auto; }
 
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
 .invisible {
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 /*
  * Clearfix: contain floats
@@ -253,20 +225,17 @@ footer {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */
-}
+  /* 2 */ }
 
 .clearfix:after {
-  clear: both;
-}
+  clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
 .clearfix {
-  *zoom: 1;
-}
+  *zoom: 1; }
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -274,11 +243,9 @@ footer {
    Modify as content requires.
    ========================================================================== */
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+  /* Style adjustments for viewports that meet the condition */ }
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+  /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
@@ -289,21 +256,17 @@ footer {
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    text-shadow: none !important; }
 
   a,
   a:visited {
-    text-decoration: underline;
-  }
+    text-decoration: underline; }
 
   a[href]:after {
-    content: " (" attr(href) ")";
-  }
+    content: " (" attr(href) ")"; }
 
   abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+    content: " (" attr(title) ")"; }
 
   /*
    * Don't show links for images, or javascript/internal links
@@ -311,41 +274,32 @@ footer {
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
-    content: "";
-  }
+    content: ""; }
 
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   thead {
     display: table-header-group;
-    /* h5bp.com/t */
-  }
+    /* h5bp.com/t */ }
 
   tr,
   img {
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   img {
-    max-width: 100% !important;
-  }
+    max-width: 100% !important; }
 
   @page {
-    margin: 0.5cm;
-  }
+    margin: 0.5cm; }
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3;
-  }
+    widows: 3; }
 
   h2,
   h3 {
-    page-break-after: avoid;
-  }
-}
+    page-break-after: avoid; } }
