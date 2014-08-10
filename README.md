@@ -181,3 +181,58 @@ $ sudo npm install grunt-contrib-sass --save-dev
 ```
 Update `Gruntfile.js` with Sass config as described at the above link to compile `main.scss` to `main.css`
 
+###Merge branch back into master
+Switch back to master and then merge in the new branch
+
+```
+$ git checkout master
+$ git merge Configure-Sass-and-Grunt
+```
+
+This resulted in a number of errors relating to untracked files
+
+```
+error: The following untracked working tree files would be overwritten by merge:
+  node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/.bin/has-ansi
+  node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/.bin/strip-ansi
+  node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/.bin/supports-color
+  node_modules/grunt-contrib-sass/node_modules/.bin/which
+  node_modules/grunt-contrib-sass/node_modules/.bin/win-spawn
+  node_modules/grunt-contrib-sass/node_modules/chalk/node_modules/.bin/has-ansi
+  node_modules/grunt-contrib-sass/node_modules/chalk/node_modules/.bin/strip-ansi
+  node_modules/grunt-contrib-sass/node_modules/chalk/node_modules/.bin/supports-color
+  node_modules/grunt-contrib-uglify/node_modules/.bin/uglifyjs
+  node_modules/grunt-contrib-uglify/node_modules/chalk/node_modules/.bin/has-ansi
+  node_modules/grunt-contrib-uglify/node_modules/chalk/node_modules/.bin/strip-ansi
+  node_modules/grunt-contrib-uglify/node_modules/chalk/node_modules/.bin/supports-color
+  node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/.bin/gzip-size
+  node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/.bin/pretty-bytes
+  node_modules/grunt/node_modules/.bin/cake
+  node_modules/grunt/node_modules/.bin/coffee
+  node_modules/grunt/node_modules/.bin/js-yaml
+  node_modules/grunt/node_modules/.bin/nopt
+  node_modules/grunt/node_modules/.bin/rimraf
+  node_modules/grunt/node_modules/.bin/which
+  node_modules/grunt/node_modules/js-yaml/node_modules/.bin/esparse
+  node_modules/grunt/node_modules/js-yaml/node_modules/.bin/esvalidate
+Please move or remove them before you can merge.
+```
+
+Added the `node_modules` folder to Git, committed and then successfully merged.
+```
+$ git add node_modules/
+$ git commit -m "Adding untracked node_modules files which were causing merge conflicts"
+$ git merge Configure-Sass-and-Grunt
+```
+
+The merge command opened a vi editor window for a commit message. Quit that (:q!), resulting in
+```
+error: There was a problem with the editor 'vi'.
+Not committing merge; use 'git commit' to complete the merge.
+```
+
+Committed and pushed to GitHub
+```
+$ git commit -m "Sass and Grunt components and config"
+$ git push origin master
+```
