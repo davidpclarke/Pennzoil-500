@@ -66,8 +66,8 @@ $ sudo npm install -g grunt-cli
 ```
 
 Set up grunt to concatenate multiple files:
-* normalize.css and main.css to style.css
-* modernizr-2.6.2.min.js and jquery.fittext.js to scripts.js
+* `normalize.css` and `main.css` to `style.css`
+* `modernizr-2.6.2.min.js` and `jquery.fittext.js` to `scripts.js`
 
 Install `grunt-contrib-concat`, the Grunt plugin for concatenating files
 ```
