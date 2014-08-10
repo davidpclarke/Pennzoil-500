@@ -148,8 +148,8 @@ nav a:link {
 #hero {
     padding-top: $headerHeight;  /* Push content down to start at the bottom of the header */
     width: 100%;
-    min-height: calc( 100vh - #{$headerHeight} );   /* Set height to viewport minus header height
-                                                       To use SASS variables in calculations use #{} */
+    min-height: calc( 100vh - #{$headerHeight} );   /* Set height to viewport minus header height */
+                                                    /* To use SASS variables in calculations use hash and braces */
     background-image: url("http://wallpapertoon.com/wp-content/uploads/2014/06/classic-sports-car-hd-desktop-wallpaper.jpg");
     background-size: cover;
     background-position: center;
