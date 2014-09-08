@@ -122,7 +122,9 @@ nav a:link {
   padding-top: 30px;
   /* Push content down to start at the bottom of the header */
   width: 100%;
-  min-height: calc(100vh - 30px );
+  /* viewport units don't work in calc for Safari
+     Consider calculating this as a Sass variable first */
+  height: calc(100vh - 30px );
   /* Set height to viewport minus header height */
   /* To use SASS variables in calculations use hash and braces */
   background-image: url("http://wallpapertoon.com/wp-content/uploads/2014/06/classic-sports-car-hd-desktop-wallpaper.jpg");
@@ -146,9 +148,9 @@ nav a:link {
   margin-top: 0px; }
 
 #drivers {
-  background-color: #000000;
+  background-color: #ffffff;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1800px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -159,15 +161,52 @@ nav a:link {
 
 #drivers ul li {
   display: inline;
+  position: relative;
   width: calc(100% / 3 );
-  float: left; }
+  float: left;
+  overflow: hidden; }
+
+/* This technique forces the li height to be relative
+   to the width because padding percentage is based on
+   the width (even top and bottom padding). 100% for
+   a square. Then set the position of content absolute
+   inside the li */
+#drivers ul li:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  /* ratio of 1:1 */ }
+
+.driverContainer {
+  position: absolute;
+  top: -112px;
+  transition: 100ms;
+  /* Hover off state */ }
+
+.driverContainer:hover {
+  top: 0px;
+  transition: 200ms; }
+
+.driverName {
+  background-color: #ffffff; }
+
+.driverName h3 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 0px;
+  margin-top: 8px;
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
+
+.driverName p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 0px;
+  margin-top: 0px; }
 
 #drivers ul li img {
   width: 100%;
   height: auto; }
-
-footer {
-  background-color: #B67721; }
 
 /* ==========================================================================
    Helper classes
