@@ -15,9 +15,8 @@ module.exports = function(grunt) {
         concat: {   
             dist: {
                 src: [
-                    'js/vendor/modernizr-2.6.2.min.js', // Modernizr (from H5BP)
                     'js/*.js',                          // All JS in the js folder (from H5BP)
-                    'js/vendor/jquery.fittext.js'       // FitText.js
+                    'bower_components/fittext/fittext.js'       // FitText.js
                 ],
                 dest: 'js/build/production.js',
             }

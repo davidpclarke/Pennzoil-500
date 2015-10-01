@@ -105,8 +105,10 @@
         <script src="js/build/production.min.js"></script>
 
         <script>
-			jQuery("#largeTitle").fitText(0.9);
-			jQuery("#smallTitle").fitText(1.6);
+//			jQuery("#largeTitle").fitText(0.9);
+//			jQuery("#smallTitle").fitText(1.6);
+            window.fitText( document.getElementById("largeTitle"), 0.9 );
+            window.fitText( document.getElementById("smallTitle"), 1.6 );
 		</script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
