@@ -154,7 +154,7 @@ nav a:link {
 
     height: calc( 100vh - #{$headerHeight} );   /* Set height to viewport minus header height */
                                                 /* To use SASS variables in calculations use hash and braces */
-    background-image: url("http://www.pageresource.com/wallpapers/wallpaper/classic-sports-car.jpg");
+    background-image: url("../img/classic-sports-car.jpg");
     background-size: cover;
     background-position: center;
 }

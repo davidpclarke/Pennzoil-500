@@ -3,4 +3,5 @@ bower_components
 .sass-cache
 css/main.css
 js/build
-
+.gitignore.swp
+css/main.css.map
