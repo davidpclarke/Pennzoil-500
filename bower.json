@@ -1,0 +1,20 @@
+{
+  "name": "Pennzoil-500",
+  "version": "0.0.0",
+  "homepage": "https://github.com/davidpclarke/Pennzoil-500",
+  "authors": [
+    "David Clarke <davidpclarke@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fittext": "*",
+    "jquery": "~2.1.4"
+  }
+}
